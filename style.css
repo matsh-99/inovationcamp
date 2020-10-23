@@ -1,0 +1,102 @@
+
+
+* {
+text-decoration: none;
+}
+html, body, footer {
+  width:100%;
+  padding: 0;
+  margin: 0;
+}
+.bilde1 {
+  width: 100%;
+  height: calc(100vh - 0px);
+  background-image: url('img/Front-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.forside-tekst {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding-right: 50px;
+  padding-left: 50px;
+  content: fit-content;
+}
+.tekst-forside {
+  width: 800px;
+  border: 1px;
+  padding: 50px 350px;
+  margin: 20px;
+
+}
+
+.tittel-novid {
+  padding-top: 30px;
+  font-size: 80px;
+  padding-left: 450px;
+  color: darkblue;
+  font-family: courier, helvetica, arial ;
+  text-transform: uppercase;
+}
+ul {
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background: #f3f3f3;
+  float: left;
+  text-decoration-color: lightblue;
+}
+li{
+
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+
+}
+li:hover {
+  cursor: pointer;
+  background: #2a6592;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  color: #f3f3f3;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.footer-klasse {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+.footer-klasse ul li {
+  text-align: center;
+}
